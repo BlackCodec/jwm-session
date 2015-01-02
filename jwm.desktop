@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=JWM
+Comment=Log in using the Joe's window manager
+Exec=/usr/bin/jwm-session
+TryExec=/usr/bin/jwm-session
+Icon=jwm
+Type=Application
