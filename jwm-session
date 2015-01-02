@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ ! -f "~/.jwmrc" ]; then
+	# Configuration file not found
+	if [ ! -d "~/.config/jwm/" ]; then
+		mkdir -p ~/.config/jwm
+	fi
+	# Copy configuration file
+	if [ -f "/etc/system.jwmrc" ]; then
+		# Arch linux
+		cp /etc/system.jwmrc ~/.config/jwm/jwmrc
+	elif [ -f "/etc/jwm/jwmrc" ]; then
+		# Ubuntu linux
+		cp /etc/jwm/jwmrc ~/.config/jwm/jwmrc	
+	fi
+	# Check if exist configuration file
+	if [ -f "~/.config/jwm/jwmrc" ] ; then
+		# Make symbolic link to home
+		ln -s ~/.jwmrc ~/.config/jwm/jwmrc
+	fi
+fi
+
+exec jwm & 
