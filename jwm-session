@@ -16,7 +16,7 @@ if [ ! -f "~/.jwmrc" ]; then
 	# Check if exist configuration file
 	if [ -f "~/.config/jwm/jwmrc" ] ; then
 		# Make symbolic link to home
-		ln -s ~/.jwmrc ~/.config/jwm/jwmrc
+		ln -s ~/.config/jwm/jwmrc ~/.jwmrc
 	fi
 fi
 
