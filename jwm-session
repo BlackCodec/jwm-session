@@ -6,7 +6,10 @@ if [ ! -f ~/.jwmrc ]; then
 		mkdir -p ~/.config/jwm
 	fi
 	# Copy configuration file
-	if [ -f /etc/system.jwmrc ]; then
+        if [ -d /usr/share/jwm/ ]; then
+		# Copy all files from there
+		cp /usr/share/jwm/* ~/.config/jwm
+	elif [ -f /etc/system.jwmrc ]; then
 		# Arch linux
 		cp /etc/system.jwmrc ~/.config/jwm/jwmrc
 	elif [ -f /etc/jwm/jwmrc ]; then
