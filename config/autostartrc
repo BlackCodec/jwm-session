@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<JWM>
+    <StartupCommand>cbatticon</StartupCommand>
+    <StartupCommand>volumeicon</StartupCommand>
+</JWM>

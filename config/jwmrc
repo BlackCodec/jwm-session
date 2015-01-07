@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<JWM>
+
+    <!-- The root menu. -->
+    <RootMenu onroot="12">
+        <Include>exec: jwmappmenugen -i</Include>
+    </RootMenu>
+
+    <!-- Options for program groups. -->
+    <Include>$HOME/.config/jwm/grouprc</Include>
+
+    <!-- Tray at the bottom. -->
+    <Tray x="0" y="-1" height="32" autohide="false">
+
+        <TrayButton label="JWM">root:1</TrayButton>
+        <TrayButton label="_">showdesktop</TrayButton>
+
+        <Pager labeled="true"/>
+
+        <TaskList maxwidth="256"/>
+
+        <Dock/>
+        <Clock>xclock</Clock>
+
+    </Tray>
+
+    <!-- Visual Styles -->
+    <Include>$HOME/.config/jwm/themerc</Include>
+    <!-- Path where icons can be found.
+         IconPath can be listed multiple times to allow searching
+         for icons in multiple paths.
+      -->
+    <IconPath>
+        /usr/share/icons/wm-icons/32x32-gant
+    </IconPath>
+
+    <!-- Virtual Desktops -->
+    <!-- Desktop tags can be contained within Desktops for desktop names. -->
+    <Desktops width="2" height="1">
+        <!-- Default background. Note that a Background tag can be
+              contained within a Desktop tag to give a specific background
+              for that desktop.
+         -->
+        <Background type="image">$HOME/images/bg.jpg</Background>
+    </Desktops>
+
+    <!-- Double click speed (in milliseconds) -->
+    <DoubleClickSpeed>400</DoubleClickSpeed>
+
+    <!-- Double click delta (in pixels) -->
+    <DoubleClickDelta>2</DoubleClickDelta>
+
+    <!-- The focus model (sloppy or click) -->
+    <FocusModel>sloppy</FocusModel>
+
+    <!-- The snap mode (none, screen, or border) -->
+    <SnapMode distance="10">border</SnapMode>
+
+    <!-- The move mode (outline or opaque) -->
+    <MoveMode>opaque</MoveMode>
+
+    <!-- The resize mode (outline or opaque) -->
+    <ResizeMode>opaque</ResizeMode>
+
+    <!-- Key bindings -->
+    <Include>$HOME/.config/jwm/keysrc</Include>
+
+    <!-- Autostart Application -->
+    <Include>$HOME/.config/jwm/autostartrc</Include>
+
+</JWM>
