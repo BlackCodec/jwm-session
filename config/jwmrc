@@ -4,7 +4,10 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="12">
-        <Include>exec: jwmappmenugen -i</Include>
+        <!-- OLD JWM Appmenugen
+	<Include>exec: jwmappmenugen -i</Include>
+        -->
+        <Include>exec: menugenerator -i -p -w jwm</Include>
     </RootMenu>
 
     <!-- Options for program groups. -->
