@@ -6,51 +6,57 @@
         <Width>4</Width>
         <Height>20</Height>
         <Active>
-            <Text>#FFFFFF</Text>
-            <Title>#CC7700:#884400</Title>
+            <Text>#313739</Text>
+            <Title>#ededed</Title>
             <Outline>#000000</Outline>
             <Opacity>1.0</Opacity>
         </Active>
         <Inactive>
-            <Text>#FFFFFF</Text>
-            <Title>#333333:#111111</Title>
+            <Text>#949494</Text>
+            <Title>#ededed</Title>
             <Outline>#000000</Outline>
-            <Opacity>0.5:0.9:0.1</Opacity>
+            <Opacity>1.0</Opacity>
         </Inactive>
     </WindowStyle>
     <TrayStyle>
         <Font>FreeSans-12:bold</Font>
-        <Background>#111111</Background>
-        <Foreground>#FFFFFF</Foreground>
+        <Background>#ededed</Background>
+        <Foreground>#313739</Foreground>
         <Opacity>0.75</Opacity>
     </TrayStyle>
     <TaskListStyle>
         <Font>FreeSans-12:bold</Font>
-        <ActiveForeground>#FFFFFF</ActiveForeground>
-        <ActiveBackground>#111111:#333333</ActiveBackground>
-        <Foreground>#FFFFFF</Foreground>
-        <Background>#333333:#111111</Background>
+        <ActiveForeground>#313739</ActiveForeground>
+        <ActiveBackground>#ededed</ActiveBackground>
+        <Foreground>#313739</Foreground>
+        <Background>#ededed</Background>
     </TaskListStyle>
     <PagerStyle>
         <Outline>#000000</Outline>
-        <Text>#FFFFFF</Text>
-        <Foreground>#444444</Foreground>
-        <Background>#111111</Background>
-        <ActiveForeground>#CC7700</ActiveForeground>
-        <ActiveBackground>#884400</ActiveBackground>
+        <Text>#313739</Text>
+        <Foreground>#313739</Foreground>
+        <Background>#ededed</Background>
+        <ActiveForeground>#313739</ActiveForeground>
+        <ActiveBackground>#ededed</ActiveBackground>
     </PagerStyle>
     <MenuStyle>
         <Font>FreeSans-11</Font>
-        <Foreground>#FFFFFF</Foreground>
-        <Background>#333333</Background>
-        <ActiveForeground>#FFFFFF</ActiveForeground>
-        <ActiveBackground>#CC7700:#884400</ActiveBackground>
+        <Foreground>#313739</Foreground>
+        <Background>#ededed</Background>
+        <ActiveForeground>#ededed</ActiveForeground>
+        <ActiveBackground>#313739</ActiveBackground>
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
         <Font>FreeSans-10</Font>
         <Outline>#000000</Outline>
-        <Foreground>#000000</Foreground>
-        <Background>#999999</Background>
+        <Foreground>#313739</Foreground>
+        <Background>#ededed</Background>
     </PopupStyle>
+<!--
+    <ButtonClose>$HOME/.themes/Adwaita-Xfce/xfwm4/close-active.xpm</ButtonClose>
+    <ButtonMax>$HOME/.themes/Adwaita-Xfce/xfwm4/maximize-active.xpm</ButtonMax>
+    <ButtonMaxActive>$HOME/.themes/Adwaita-Xfce/xfwm4/maximize-active.xpm</ButtonMaxActive>
+    <ButtonMin>$HOME/.themes/Adwaita-Xfce/xfwm4/hide-active.xpm</ButtonMin>
+-->
 </JWM>

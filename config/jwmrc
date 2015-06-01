@@ -4,19 +4,17 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="12">
-        <!-- OLD JWM Appmenugen
+        <!-- JWM Appmenugen -->
 	<Include>exec: jwmappmenugen -i</Include>
-        -->
-        <Include>exec: menugenerator -i -p -w jwm</Include>
     </RootMenu>
 
     <!-- Options for program groups. -->
     <Include>$HOME/.config/jwm/grouprc</Include>
 
-    <!-- Tray at the bottom. -->
-    <Tray x="0" y="-1" height="32" autohide="false">
+    <!-- Tray at the bottom. y -1 -->
+    <Tray x="0" y="0" height="32" autohide="false">
 
-        <TrayButton label="JWM">root:1</TrayButton>
+        <TrayButton label="Start">root:1</TrayButton>
         <TrayButton label="_">showdesktop</TrayButton>
 
         <Pager labeled="true"/>
@@ -24,7 +22,8 @@
         <TaskList maxwidth="256"/>
 
         <Dock/>
-        <Clock>xclock</Clock>
+        <Clock>gsimplecal</Clock>
+	<TrayButton label="X">exec:jwm -exit</TrayButton>
 
     </Tray>
 
@@ -45,7 +44,7 @@
               contained within a Desktop tag to give a specific background
               for that desktop.
          -->
-        <Background type="image">$HOME/images/bg.jpg</Background>
+        <Background type="solid">#313739</Background>
     </Desktops>
 
     <!-- Double click speed (in milliseconds) -->
@@ -55,7 +54,7 @@
     <DoubleClickDelta>2</DoubleClickDelta>
 
     <!-- The focus model (sloppy or click) -->
-    <FocusModel>sloppy</FocusModel>
+    <FocusModel>click</FocusModel>
 
     <!-- The snap mode (none, screen, or border) -->
     <SnapMode distance="10">border</SnapMode>
