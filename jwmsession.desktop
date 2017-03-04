@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=JWM
+Name=JWM Session
 Comment=Log in using the Joe's window manager
 Exec=/usr/bin/jwm-session
 TryExec=/usr/bin/jwm-session
