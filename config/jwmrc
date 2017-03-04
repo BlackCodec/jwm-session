@@ -5,7 +5,8 @@
     <!-- The root menu. -->
     <RootMenu onroot="12">
         <!-- JWM Appmenugen -->
-	<Include>exec: jwmappmenugen -i</Include>
+	<!-- <Include>exec: jwmappmenugen -i</Include> -->
+	<Dynamic>exec: menugenerator -i -p -w jwm</Dynamic>
     </RootMenu>
 
     <!-- Options for program groups. -->
